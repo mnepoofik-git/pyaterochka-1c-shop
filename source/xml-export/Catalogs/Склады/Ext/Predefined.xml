@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" version="2.20">
+  <Item>
+    <Name>ТестовыйСклад</Name>
+    <Description>Демонстрационный склад, не реальный</Description>
+    <Code>000000001</Code>
+    <IsFolder>false</IsFolder>
+    <ТипСклада>Тестовый</ТипСклада>
+  </Item>
+</PredefinedData>

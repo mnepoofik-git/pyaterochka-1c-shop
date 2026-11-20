@@ -16,6 +16,78 @@
 <checkUnique>true</checkUnique>
 <autonumbering>true</autonumbering>
 <defaultPresentation>AsDescription</defaultPresentation>
+<predefined>
+  <items id="68b046ae-3dc5-56a0-a515-51e90ff2960b">
+    <name>ТестХлеб</name>
+    <description>Хлеб белый, 400 г</description>
+    <code xsi:type="core:StringValue">
+      <value>000000001</value>
+    </code>
+  </items>
+  <items id="548a0e09-aa1d-5ab3-858a-397c82e52162">
+    <name>ТестМолоко</name>
+    <description>Молоко 3,2%, 1 л</description>
+    <code xsi:type="core:StringValue">
+      <value>000000002</value>
+    </code>
+  </items>
+  <items id="405ccdb6-93d8-582e-8035-2054283a6e3c">
+    <name>ТестВода</name>
+    <description>Вода питьевая негазированная, 1,5 л</description>
+    <code xsi:type="core:StringValue">
+      <value>000000003</value>
+    </code>
+  </items>
+  <items id="983283be-dd7a-5b7e-86fe-708983114be6">
+    <name>ТестЧай</name>
+    <description>Чай чёрный, 25 пакетиков</description>
+    <code xsi:type="core:StringValue">
+      <value>000000004</value>
+    </code>
+  </items>
+  <items id="bed5e9ca-c227-5b32-b8eb-d7e679d3df7a">
+    <name>ТестСахар</name>
+    <description>Сахар, 1 кг</description>
+    <code xsi:type="core:StringValue">
+      <value>000000005</value>
+    </code>
+  </items>
+  <items id="c800f52d-1c4d-52df-af54-b12706a98813">
+    <name>ТестЯблоки</name>
+    <description>Яблоки сезонные, 1 кг</description>
+    <code xsi:type="core:StringValue">
+      <value>000000006</value>
+    </code>
+  </items>
+  <items id="30d76b20-5bab-5534-b548-8424f5821d10">
+    <name>ТестБананы</name>
+    <description>Бананы, 1 кг</description>
+    <code xsi:type="core:StringValue">
+      <value>000000007</value>
+    </code>
+  </items>
+  <items id="e802dd8a-7f44-5309-81c1-9ed03341a08f">
+    <name>ТестЯйца</name>
+    <description>Яйца куриные С1, 10 шт.</description>
+    <code xsi:type="core:StringValue">
+      <value>000000008</value>
+    </code>
+  </items>
+  <items id="35838bee-a715-5be2-9e31-938640ece0f5">
+    <name>ТестМакароны</name>
+    <description>Макароны, 450 г</description>
+    <code xsi:type="core:StringValue">
+      <value>000000009</value>
+    </code>
+  </items>
+  <items id="1e50baa6-148c-500e-b8a0-6abc49167f8d">
+    <name>ТестКонфеты</name>
+    <description>Конфеты ассорти, 250 г</description>
+    <code xsi:type="core:StringValue">
+      <value>000000010</value>
+    </code>
+  </items>
+</predefined>
 <attributes uuid="e05bfa2b-f047-49ed-a2d7-918f43ae6da6"><name>Штрихкод</name><synonym><key>ru</key><value>Штрихкод</value></synonym><type><types>String</types><stringQualifiers><length>13</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
 <attributes uuid="aed41c76-20ef-4343-888c-e1959bc57f86"><name>Артикул</name><synonym><key>ru</key><value>Артикул</value></synonym><type><types>String</types><stringQualifiers><length>25</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
 <attributes uuid="d4b597de-fef1-4331-8d5e-e29afbdacb9b"><name>ЕдиницаИзмерения</name><synonym><key>ru</key><value>Единица измерения</value></synonym><type><types>String</types><stringQualifiers><length>20</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>

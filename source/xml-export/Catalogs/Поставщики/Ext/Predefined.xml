@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" version="2.20">
+  <Item>
+    <Name>ТестовыйПоставщик</Name>
+    <Description>Учебный поставщик — несуществующая организация</Description>
+    <Code>000000001</Code>
+    <IsFolder>false</IsFolder>
+    <ИНН>000000000000</ИНН>
+    <Телефон>+7 000 000-00-00</Телефон>
+    <ЭлектроннаяПочта>demo@example.invalid</ЭлектроннаяПочта>
+  </Item>
+</PredefinedData>

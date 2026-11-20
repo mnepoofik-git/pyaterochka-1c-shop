@@ -12,6 +12,15 @@
 <checkUnique>true</checkUnique>
 <autonumbering>true</autonumbering>
 <defaultPresentation>AsDescription</defaultPresentation>
+<predefined>
+  <items id="87dc73a9-b376-5697-a35a-88f6d6d193ed">
+    <name>ТестовыйСклад</name>
+    <description>Демонстрационный склад, не реальный</description>
+    <code xsi:type="core:StringValue">
+      <value>000000001</value>
+    </code>
+  </items>
+</predefined>
 <attributes uuid="0c806a33-3d77-42eb-847d-9fbfeab021f3"><name>Магазин</name><synonym><key>ru</key><value>Магазин</value></synonym><type><types>CatalogRef.Магазины</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
 <attributes uuid="f759414e-c1b7-4765-a421-bc5627a57f4a"><name>ТипСклада</name><synonym><key>ru</key><value>Тип склада</value></synonym><type><types>String</types><stringQualifiers><length>30</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
 </mdclass:Catalog>

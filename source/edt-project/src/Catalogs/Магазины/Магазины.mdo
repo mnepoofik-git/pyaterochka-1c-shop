@@ -12,6 +12,15 @@
 <checkUnique>true</checkUnique>
 <autonumbering>true</autonumbering>
 <defaultPresentation>AsDescription</defaultPresentation>
+<predefined>
+  <items id="ea6513d5-82d5-51e7-b629-ac1f8e238a35">
+    <name>ТестовыйМагазин</name>
+    <description>Пятёрочка — демонстрационный магазин (данные вымышлены)</description>
+    <code xsi:type="core:StringValue">
+      <value>000000001</value>
+    </code>
+  </items>
+</predefined>
 <attributes uuid="30e8d667-bd8b-46eb-b118-43e55f6d5070"><name>Адрес</name><synonym><key>ru</key><value>Адрес</value></synonym><type><types>String</types><stringQualifiers><length>200</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
 <attributes uuid="b459ac51-dccb-41b3-beca-d162fbd28b57"><name>КодМагазина</name><synonym><key>ru</key><value>Код магазина</value></synonym><type><types>String</types><stringQualifiers><length>12</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
 </mdclass:Catalog>
