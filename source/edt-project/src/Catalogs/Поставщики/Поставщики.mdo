@@ -8,6 +8,7 @@
 <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
 <dataLockControlMode>Managed</dataLockControlMode>
 <codeLength>9</codeLength>
+<descriptionLength>100</descriptionLength>
 <codeAllowedLength>Variable</codeAllowedLength>
 <checkUnique>true</checkUnique>
 <autonumbering>true</autonumbering>
