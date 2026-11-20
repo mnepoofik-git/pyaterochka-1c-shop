@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="20fe0d31-943c-431d-8321-0475b8d49176">
+<producedTypes><objectType typeId="f13a2bda-81ec-47a9-b4ab-55a2f728faa6" valueTypeId="46d82677-57f3-4c74-883a-f6f501b1849c"/><refType typeId="e6472ca4-b779-4a75-98c7-d12df5795a65" valueTypeId="9af5e6ba-125b-456c-9990-05ae4e13383b"/><selectionType typeId="b58a5922-ef37-4127-8848-2409c1b72d27" valueTypeId="6a72b827-626f-431f-b7af-4ca24847d0c2"/><listType typeId="23037cd6-7a8b-476a-8c39-3e80f0034649" valueTypeId="2281e89e-5402-43fb-9902-e17bcda7844f"/><managerType typeId="ed50c6c3-a3e0-414e-9b1a-13a305e62fa9" valueTypeId="7e79c0c1-c712-4611-911a-63669ae2c8a2"/></producedTypes>
+<name>Магазины</name>
+<synonym><key>ru</key><value>Магазины</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+<dataLockControlMode>Managed</dataLockControlMode>
+<codeLength>9</codeLength>
+<codeAllowedLength>Variable</codeAllowedLength>
+<checkUnique>true</checkUnique>
+<autonumbering>true</autonumbering>
+<defaultPresentation>AsDescription</defaultPresentation>
+<attributes uuid="30e8d667-bd8b-46eb-b118-43e55f6d5070"><name>Адрес</name><synonym><key>ru</key><value>Адрес</value></synonym><type><types>String</types><stringQualifiers><length>200</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="b459ac51-dccb-41b3-beca-d162fbd28b57"><name>КодМагазина</name><synonym><key>ru</key><value>Код магазина</value></synonym><type><types>String</types><stringQualifiers><length>12</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+</mdclass:Catalog>

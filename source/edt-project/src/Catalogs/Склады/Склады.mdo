@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="55e113c9-e025-4d55-bcaa-5724d8618ba1">
+<producedTypes><objectType typeId="5976784b-f0ac-4491-9640-e39e3a2504ed" valueTypeId="92b2c2ec-1735-46fe-a814-bc8b31efe219"/><refType typeId="7c250476-a0d3-49e4-add4-0bdc9fd702b5" valueTypeId="01e6b3fa-c53f-4c0a-ae37-be2690b1d03c"/><selectionType typeId="5d949ce1-d895-42f1-83d5-83ad7d718895" valueTypeId="02d87041-80a9-4021-9a5e-900ccb5eecd6"/><listType typeId="8fa4132c-2be6-464e-a5bc-139b6c00c99b" valueTypeId="600c7374-1738-4ec1-a72d-6a4c25ef7631"/><managerType typeId="283c3080-ee47-43e8-a221-957499bb7a50" valueTypeId="96239633-de15-413d-bff9-86fabc686ec7"/></producedTypes>
+<name>Склады</name>
+<synonym><key>ru</key><value>Склады</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+<dataLockControlMode>Managed</dataLockControlMode>
+<codeLength>9</codeLength>
+<codeAllowedLength>Variable</codeAllowedLength>
+<checkUnique>true</checkUnique>
+<autonumbering>true</autonumbering>
+<defaultPresentation>AsDescription</defaultPresentation>
+<attributes uuid="0c806a33-3d77-42eb-847d-9fbfeab021f3"><name>Магазин</name><synonym><key>ru</key><value>Магазин</value></synonym><type><types>CatalogRef.Магазины</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="f759414e-c1b7-4765-a421-bc5627a57f4a"><name>ТипСклада</name><synonym><key>ru</key><value>Тип склада</value></synonym><type><types>String</types><stringQualifiers><length>30</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+</mdclass:Catalog>

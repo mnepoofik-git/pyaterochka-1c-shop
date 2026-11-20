@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="5387906b-1f33-49fc-9e0e-295006a2ecf6">
+<producedTypes><selectionType typeId="5490c687-5b05-488f-b004-ebca69b6220a" valueTypeId="f480fce1-a4a9-496f-96da-5f9a472285fd"/><listType typeId="2a6e3208-01d3-45a8-994c-84a1a96febd4" valueTypeId="9d692c9d-eefa-4453-adee-841e92cedeb0"/><managerType typeId="4d0dbf79-9996-44a4-b104-991b610b4618" valueTypeId="1eec9da5-522e-4a81-9682-3e73c75dacc9"/><recordSetType typeId="09c15f3f-8ab2-4d4b-ac01-8cbda8e8db2f" valueTypeId="fd1fd9d1-cbbd-4f32-b370-7a7363909587"/><recordKeyType typeId="11391425-c16b-4850-9c38-e8b64e604543" valueTypeId="240d3f79-90c6-43a7-9dfc-1455b0f27214"/><recordType typeId="0ae6f668-4ad9-4b8e-ad95-5c3a16cf1a1b" valueTypeId="75010329-79e6-4c74-ae47-8d30bc076db4"/></producedTypes>
+<name>ТоварыНаСкладах</name>
+<synonym><key>ru</key><value>Товары на складах</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<registerType>Balance</registerType>
+<dataLockControlMode>Managed</dataLockControlMode>
+<fullTextSearch>Use</fullTextSearch>
+<dimensions uuid="021795f3-73d7-43be-9ddf-14f619e23f3f"><name>Номенклатура</name><synonym><key>ru</key><value>Номенклатура</value></synonym><type><types>CatalogRef.Номенклатура</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput><useInTotals>true</useInTotals></dimensions>
+<dimensions uuid="e7e45283-bc84-48ef-9b34-76f4cb07d866"><name>Склад</name><synonym><key>ru</key><value>Склад</value></synonym><type><types>CatalogRef.Склады</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput><useInTotals>true</useInTotals></dimensions>
+<resources uuid="a648b098-59f3-4911-aa05-75cb5859a195"><name>Количество</name><synonym><key>ru</key><value>Количество</value></synonym><type><types>Number</types><numberQualifiers><digits>15</digits><fractionDigits>3</fractionDigits><allowedSign>Any</allowedSign></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput></resources>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="effe3aa5-9eff-488f-a3f8-42d99a52ae1d">
+<producedTypes><selectionType typeId="6d4ef924-433e-4283-93ef-7a3b67e5d015" valueTypeId="6541a9ae-3af7-49bf-8e99-f4aa393fec6c"/><listType typeId="83c77f2c-eb70-49a5-af87-13c43fc4cc2b" valueTypeId="bb666809-45fe-4d26-acb9-71e99e3d8836"/><managerType typeId="0bb026be-8767-417b-85fb-30780a96b962" valueTypeId="b5548df9-4a1f-4c68-a69e-da28ea4a6b45"/><recordSetType typeId="3cdce946-05a2-4674-a495-02c8d9f408ff" valueTypeId="0f66c01a-cb5c-4f13-9c68-359a73a11bea"/><recordKeyType typeId="18fea313-db65-4acf-bbd8-11ae6b8ba8fb" valueTypeId="f5559a71-70ef-4fea-8bbf-cfada1a8751d"/><recordType typeId="611e236c-f645-4a5a-8080-0e562924e6ca" valueTypeId="d28ec464-7c08-401f-88be-5629ecca1f05"/></producedTypes>
+<name>Продажи</name>
+<synonym><key>ru</key><value>Продажи</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<registerType>Turnovers</registerType>
+<dataLockControlMode>Managed</dataLockControlMode>
+<fullTextSearch>Use</fullTextSearch>
+<dimensions uuid="dffdef77-c6e9-489f-80ce-1148aedee33a"><name>Номенклатура</name><synonym><key>ru</key><value>Номенклатура</value></synonym><type><types>CatalogRef.Номенклатура</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput><useInTotals>true</useInTotals></dimensions>
+<dimensions uuid="00a656bf-20aa-4446-8b77-fa6d600ae762"><name>Магазин</name><synonym><key>ru</key><value>Магазин</value></synonym><type><types>CatalogRef.Магазины</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput><useInTotals>true</useInTotals></dimensions>
+<resources uuid="3e4623d0-7120-4e40-9487-976b46edd8bb"><name>Количество</name><synonym><key>ru</key><value>Количество</value></synonym><type><types>Number</types><numberQualifiers><digits>15</digits><fractionDigits>3</fractionDigits><allowedSign>Any</allowedSign></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput></resources>
+<resources uuid="4c396593-ae2d-4700-acc5-c8f494b8d01e"><name>Сумма</name><synonym><key>ru</key><value>Сумма</value></synonym><type><types>Number</types><numberQualifiers><digits>15</digits><fractionDigits>2</fractionDigits><allowedSign>Any</allowedSign></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput></resources>
+</mdclass:AccumulationRegister>

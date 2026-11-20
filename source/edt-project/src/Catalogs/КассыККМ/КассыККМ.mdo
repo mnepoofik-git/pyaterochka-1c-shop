@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="d1d675b1-f8be-4c17-a70b-e0ffac7d52e8">
+<producedTypes><objectType typeId="672d9469-5be3-434b-a7df-bc88f49e8a7e" valueTypeId="d18c415c-1141-4558-9403-59cf6c4856f9"/><refType typeId="56db681a-d1cd-4fd0-93ae-ac3db9dc7768" valueTypeId="f004a13c-01fe-46e2-9df3-b2251938be20"/><selectionType typeId="45b437a9-eac0-4eba-b507-0f4dd45a7a5e" valueTypeId="f3ac3aa3-bb82-4786-bc6e-2625d009e14f"/><listType typeId="6792ed8c-06c8-4815-95c6-4415b7f4f843" valueTypeId="43c82e09-4b59-4499-91fc-cb2e25025b81"/><managerType typeId="5ae2cdf1-17ee-4f39-8521-508f71d4be57" valueTypeId="3317722d-8a5e-4fa4-a90e-690bc763347c"/></producedTypes>
+<name>КассыККМ</name>
+<synonym><key>ru</key><value>Кассы ККМ</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+<dataLockControlMode>Managed</dataLockControlMode>
+<codeLength>9</codeLength>
+<codeAllowedLength>Variable</codeAllowedLength>
+<checkUnique>true</checkUnique>
+<autonumbering>true</autonumbering>
+<defaultPresentation>AsDescription</defaultPresentation>
+<attributes uuid="ede57c46-d1bd-4eb6-9fdb-726ea1b06a07"><name>Склад</name><synonym><key>ru</key><value>Склад</value></synonym><type><types>CatalogRef.Склады</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="8aa8947f-08cd-46fa-a164-f3d5c1f38e8a"><name>ЗаводскойНомер</name><synonym><key>ru</key><value>Заводской номер</value></synonym><type><types>String</types><stringQualifiers><length>30</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+</mdclass:Catalog>

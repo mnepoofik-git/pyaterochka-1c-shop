@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="6102518e-25fb-4a8b-bbfa-5b9ae31c755b">
+<producedTypes><selectionType typeId="38d8d9f5-9e82-4b8f-9166-cdebed03626b" valueTypeId="ad126802-99f2-4a3f-9041-cf03324a764c"/><listType typeId="a96f0ce3-b179-4eda-83c6-422558ebf527" valueTypeId="b8d93603-9e30-4270-8491-7e193a23d94f"/><managerType typeId="32338b94-b803-43c0-9083-b1f6f0a652f7" valueTypeId="62b301f3-725a-4c60-850e-315c1a72ed92"/><recordSetType typeId="5f82d4ed-ed9e-4a63-9f79-9fbc435b39e8" valueTypeId="b32c21b1-7ac0-425d-8680-3c6ef898865d"/><recordKeyType typeId="ca0e818d-4889-4353-8868-d2088c6288ba" valueTypeId="21f1fed1-5749-4639-9656-5a316250115d"/><recordType typeId="38b4a5f6-b3d4-4e06-a8f1-5742b3efe720" valueTypeId="9e3e461c-bcc5-4a70-8729-d903289c7c08"/><recordManagerType typeId="78f42f21-2385-45e0-bfa0-604b3e1f42d7" valueTypeId="acdffe86-1109-4926-b879-e90dfababf37"/></producedTypes>
+<name>ЦеныНоменклатуры</name>
+<synonym><key>ru</key><value>Цены номенклатуры</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<informationRegisterPeriodicity>Nonperiodical</informationRegisterPeriodicity>
+<writeMode>Independent</writeMode>
+<dataLockControlMode>Managed</dataLockControlMode>
+<fullTextSearch>Use</fullTextSearch>
+<dimensions uuid="8b565d10-7d1a-452d-83f4-918d28177cb6"><name>Номенклатура</name><synonym><key>ru</key><value>Номенклатура</value></synonym><type><types>CatalogRef.Номенклатура</types></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput><useInTotals>true</useInTotals></dimensions>
+<resources uuid="9af964a2-5025-4396-8b61-4f684eb48922"><name>Цена</name><synonym><key>ru</key><value>Цена</value></synonym><type><types>Number</types><numberQualifiers><digits>15</digits><fractionDigits>2</fractionDigits><allowedSign>Any</allowedSign></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch><choiceHistoryOnInput>DontUse</choiceHistoryOnInput></resources>
+</mdclass:InformationRegister>

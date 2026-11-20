@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="5119edd5-6cfc-4f93-9246-cd7692127616">
+<producedTypes><objectType typeId="2f7e7903-cc07-4e46-a9b5-3dd01a7727c4" valueTypeId="146e9855-6ccc-4893-b9f5-abcb18cdebbc"/><refType typeId="ee5029d6-4e28-47a1-a0a8-c75714584399" valueTypeId="d5aedb44-23ae-4e5d-b9be-5e2b97ea07d1"/><selectionType typeId="5bc5d8f9-6457-4229-aed0-326573123fe1" valueTypeId="9ee82759-6532-4131-be46-1a9a732c4d43"/><listType typeId="44804481-b7d4-4fd9-8b40-488da7c1f9d7" valueTypeId="d38f0101-f776-4df3-a2b2-5a2dfe694499"/><managerType typeId="c7ac51b8-955a-4cec-ba35-a3c071098efb" valueTypeId="d78d21d2-9510-4c14-80a6-140094ee9443"/></producedTypes>
+<name>Поставщики</name>
+<synonym><key>ru</key><value>Поставщики</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+<dataLockControlMode>Managed</dataLockControlMode>
+<codeLength>9</codeLength>
+<codeAllowedLength>Variable</codeAllowedLength>
+<checkUnique>true</checkUnique>
+<autonumbering>true</autonumbering>
+<defaultPresentation>AsDescription</defaultPresentation>
+<attributes uuid="a31c62d7-9c80-43f3-b219-6d53720b3774"><name>ИНН</name><synonym><key>ru</key><value>ИНН</value></synonym><type><types>String</types><stringQualifiers><length>12</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="56a11f3f-7ddf-4bbc-8fed-6d0b56c020f0"><name>Телефон</name><synonym><key>ru</key><value>Телефон</value></synonym><type><types>String</types><stringQualifiers><length>20</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="23603ecf-abb1-444c-a7c1-7d0239142ecd"><name>ЭлектроннаяПочта</name><synonym><key>ru</key><value>Электронная почта</value></synonym><type><types>String</types><stringQualifiers><length>100</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+</mdclass:Catalog>

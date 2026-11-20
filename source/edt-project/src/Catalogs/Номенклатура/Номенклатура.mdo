@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+ uuid="b0b41aa8-0847-4a7f-b99a-0fbbe843c0dc">
+<producedTypes><objectType typeId="1062c093-2d58-499f-966c-3824e85fb9ef" valueTypeId="f459b73c-f27f-4073-8944-4bd106eb18f3"/><refType typeId="99c4bf8a-4db8-43b3-aaec-739b654fa406" valueTypeId="71316f89-9f38-462f-8e9e-cd12b6d5c5c8"/><selectionType typeId="d1c1bed6-2126-43b2-bd0c-421c1790488b" valueTypeId="5a36c19f-358d-4327-956e-1dc4c51d0e37"/><listType typeId="685aa4d5-959c-46b3-840b-c0d2a8d9aa21" valueTypeId="a6c231c5-b9b9-4347-8da9-65b62adbfc03"/><managerType typeId="d0014f66-5438-4ec4-9b71-636d9c56a0ce" valueTypeId="df4adce8-000a-471a-86c0-3ba9dee69656"/></producedTypes>
+<name>Номенклатура</name>
+<synonym><key>ru</key><value>Номенклатура</value></synonym>
+<useStandardCommands>true</useStandardCommands>
+<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+<dataLockControlMode>Managed</dataLockControlMode>
+<hierarchical>true</hierarchical>
+<hierarchyType>GroupsAndItems</hierarchyType>
+<levelCount>2</levelCount>
+<foldersOnTop>true</foldersOnTop>
+<codeLength>9</codeLength>
+<codeAllowedLength>Variable</codeAllowedLength>
+<checkUnique>true</checkUnique>
+<autonumbering>true</autonumbering>
+<defaultPresentation>AsDescription</defaultPresentation>
+<attributes uuid="e05bfa2b-f047-49ed-a2d7-918f43ae6da6"><name>Штрихкод</name><synonym><key>ru</key><value>Штрихкод</value></synonym><type><types>String</types><stringQualifiers><length>13</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="aed41c76-20ef-4343-888c-e1959bc57f86"><name>Артикул</name><synonym><key>ru</key><value>Артикул</value></synonym><type><types>String</types><stringQualifiers><length>25</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="d4b597de-fef1-4331-8d5e-e29afbdacb9b"><name>ЕдиницаИзмерения</name><synonym><key>ru</key><value>Единица измерения</value></synonym><type><types>String</types><stringQualifiers><length>20</length></stringQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+<attributes uuid="49940b7a-45ee-4722-80c0-251122848037"><name>СтавкаНДС</name><synonym><key>ru</key><value>Ставка НДС, %</value></synonym><type><types>Number</types><numberQualifiers><digits>3</digits><fractionDigits>0</fractionDigits><allowedSign>Any</allowedSign></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/><fillValue xsi:type="core:UndefinedValue"/><fullTextSearch>Use</fullTextSearch></attributes>
+</mdclass:Catalog>

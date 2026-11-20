@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="449406aa-d511-4518-8339-f7a56dfab5a7">
+  <name>МагазинПятерочка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Магазин у дома</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="88220d1b-af49-4918-bfec-0cafab1d2c94"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="bce1d196-ab3c-46f5-8528-5b7706e5c1e2"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="33c091c5-247a-4d20-84be-187542b41bc1"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="0e6a3664-c261-48c2-9134-c217cb678ff1"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="a16bbad4-6aec-47d9-a80d-d90cb707d932"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="25e1bc62-a160-4279-a972-e9680bb4e5ab"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="a7480ae8-a330-4ae3-a72b-4ddc74a04fe9"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <configurationExtensionCompatibilityMode>8.3.27</configurationExtensionCompatibilityMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.27</compatibilityMode>
+  <languages uuid="fcc6ad32-1055-4d91-ae0d-67e2e0b2e51c">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Магазины</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.Поставщики</catalogs>
+  <catalogs>Catalog.КассыККМ</catalogs>
+  <documents>Document.ПоступлениеТоваров</documents>
+  <documents>Document.РозничнаяПродажа</documents>
+  <documents>Document.ИнвентаризацияТоваров</documents>
+  <accumulationRegisters>AccumulationRegister.ТоварыНаСкладах</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
+</mdclass:Configuration>
