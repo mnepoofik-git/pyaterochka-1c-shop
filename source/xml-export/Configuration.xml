@@ -255,6 +255,7 @@
 			<Catalog>Склады</Catalog>
 			<Catalog>Поставщики</Catalog>
 			<Catalog>КассыККМ</Catalog>
+			<CommonModule>ДемоДанныеВызовСервера</CommonModule>
 			<Document>ПоступлениеТоваров</Document>
 			<Document>РозничнаяПродажа</Document>
 			<Document>ИнвентаризацияТоваров</Document>

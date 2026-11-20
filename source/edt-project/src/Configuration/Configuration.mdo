@@ -44,6 +44,7 @@
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.Поставщики</catalogs>
   <catalogs>Catalog.КассыККМ</catalogs>
+  <commonModules>CommonModule.ДемоДанныеВызовСервера</commonModules>
   <documents>Document.ПоступлениеТоваров</documents>
   <documents>Document.РозничнаяПродажа</documents>
   <documents>Document.ИнвентаризацияТоваров</documents>
