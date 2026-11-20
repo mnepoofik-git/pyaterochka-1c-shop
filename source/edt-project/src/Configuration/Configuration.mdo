@@ -5,6 +5,7 @@
     <key>ru</key>
     <value>Магазин у дома</value>
   </synonym>
+  <version>0.1.1</version>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="88220d1b-af49-4918-bfec-0cafab1d2c94"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="bce1d196-ab3c-46f5-8528-5b7706e5c1e2"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="33c091c5-247a-4d20-84be-187542b41bc1"/>
