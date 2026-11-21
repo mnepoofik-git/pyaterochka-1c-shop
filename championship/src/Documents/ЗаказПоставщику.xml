@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+  <Document uuid="7fd61552-5bac-5c55-b41b-33ae7bfd84a4">
+    <InternalInfo>
+      <xr:GeneratedType name="DocumentObject.ЗаказПоставщику" category="Object">
+        <xr:TypeId>51083038-a9f7-50e1-841e-db4a1774e907</xr:TypeId>
+        <xr:ValueId>633c2831-116f-5f77-b8ca-41203f727342</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="DocumentRef.ЗаказПоставщику" category="Ref">
+        <xr:TypeId>64012716-e783-54a1-8ef8-e5ca45fc18d5</xr:TypeId>
+        <xr:ValueId>61ec5f2e-b7ba-5042-96be-34f6c61151ee</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="DocumentSelection.ЗаказПоставщику" category="Selection">
+        <xr:TypeId>18f026b2-72b2-53fe-8be1-7b06a69287d6</xr:TypeId>
+        <xr:ValueId>e3856b6b-e752-5cb5-9ddf-cceaff63f930</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="DocumentList.ЗаказПоставщику" category="List">
+        <xr:TypeId>6afd6fea-dba7-5775-9055-1a3e3c8d3d1f</xr:TypeId>
+        <xr:ValueId>fb0b0bc2-dc54-5b97-9e31-5c643544ccc1</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="DocumentManager.ЗаказПоставщику" category="Manager">
+        <xr:TypeId>aa5ffee5-f4db-545d-bd33-e7b18921f6e4</xr:TypeId>
+        <xr:ValueId>93acb68f-69f2-50ff-a81a-9e0d1d3a3559</xr:ValueId>
+      </xr:GeneratedType>
+    </InternalInfo>
+    <Properties>
+      <ObjectBelonging>Adopted</ObjectBelonging>
+      <Name>ЗаказПоставщику</Name>
+      <Comment/>
+      <ExtendedConfigurationObject>17c81574-ebf5-4789-b027-c111587907d1</ExtendedConfigurationObject>
+    </Properties>
+    <ChildObjects>
+      <Attribute uuid="d04f34b1-3619-586e-af5a-a824ecd06531">
+        <Properties>
+          <Name>пр_UIDЗаказа</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>UID заказа производителя</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>100</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Attribute>
+      <Attribute uuid="a3fbf152-bd31-5441-813b-d4a1ef59584f">
+        <Properties>
+          <Name>пр_СостояниеПроизводителя</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Состояние производителя</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>100</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Attribute>
+      <Form>ФормаДокумента</Form>
+    </ChildObjects>
+  </Document>
+</MetaDataObject>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+  <InformationRegister uuid="45982507-afa1-5ff2-99d1-5185a0730406">
+    <InternalInfo>
+      <xr:GeneratedType name="InformationRegisterRecord.пр_СвязкаUID" category="Record">
+        <xr:TypeId>6bc47835-96be-5409-8493-970efbd9410a</xr:TypeId>
+        <xr:ValueId>b5c80edc-ba00-5f4e-a6de-460b45b140ad</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="InformationRegisterManager.пр_СвязкаUID" category="Manager">
+        <xr:TypeId>c2b4a27a-e75c-5f66-9875-70356ccfb78e</xr:TypeId>
+        <xr:ValueId>2a776317-a395-5e14-942a-8566136690c5</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="InformationRegisterSelection.пр_СвязкаUID" category="Selection">
+        <xr:TypeId>5035aba5-f192-51f6-b425-46c120a51cb1</xr:TypeId>
+        <xr:ValueId>5fb2a814-3b72-578d-8530-64bccda8741b</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="InformationRegisterList.пр_СвязкаUID" category="List">
+        <xr:TypeId>aa291aa7-d7f7-5100-94e6-82fac7690283</xr:TypeId>
+        <xr:ValueId>8bc58d55-1ab5-54b2-b99d-49d7d3938704</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="InformationRegisterRecordSet.пр_СвязкаUID" category="RecordSet">
+        <xr:TypeId>acefc554-e793-55ef-87a6-dc743b51555b</xr:TypeId>
+        <xr:ValueId>71234801-8f29-5715-be48-146c9727dad1</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="InformationRegisterRecordKey.пр_СвязкаUID" category="RecordKey">
+        <xr:TypeId>c7b80a63-98d3-54ce-9918-918b8467a482</xr:TypeId>
+        <xr:ValueId>b505b5b5-0d17-5566-a61b-0727d770347a</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="InformationRegisterRecordManager.пр_СвязкаUID" category="RecordManager">
+        <xr:TypeId>2bd47198-1f77-5593-a05f-6e557d744001</xr:TypeId>
+        <xr:ValueId>7cf22127-9f6f-5624-85a2-275e8e44852a</xr:ValueId>
+      </xr:GeneratedType>
+    </InternalInfo>
+    <Properties>
+      <Name>пр_СвязкаUID</Name>
+      <Synonym>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Соответствия каталога производителя</v8:content>
+        </v8:item>
+      </Synonym>
+      <Comment/>
+      <InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+      <WriteMode>Independent</WriteMode>
+      <DataLockControlMode>Managed</DataLockControlMode>
+    </Properties>
+    <ChildObjects>
+      <Dimension uuid="1cc4780d-6dd0-5f4d-b314-ac0dee871918">
+        <Properties>
+          <Name>UID</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>UID производителя</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>36</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Dimension>
+      <Resource uuid="a512b95b-e8e9-5288-979d-d8aa8090ba79">
+        <Properties>
+          <Name>Номенклатура</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Локальная номенклатура</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+          </Type>
+        </Properties>
+      </Resource>
+    </ChildObjects>
+  </InformationRegister>
+</MetaDataObject>

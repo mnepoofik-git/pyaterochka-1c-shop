@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+  <DataProcessor uuid="c2d2cf99-3aae-56f2-b91e-b363065dcd78">
+    <InternalInfo>
+      <xr:GeneratedType name="DataProcessorObject.пр_КаталогПроизводителя" category="Object">
+        <xr:TypeId>face74e4-4663-596a-9068-6c784197e4ea</xr:TypeId>
+        <xr:ValueId>7a1e5e40-16fc-5641-9839-c8b755a8f907</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="DataProcessorManager.пр_КаталогПроизводителя" category="Manager">
+        <xr:TypeId>e33e8893-3196-5f17-aa83-2d4077c150bd</xr:TypeId>
+        <xr:ValueId>4c67fff1-754c-548e-bd3d-f5aed4446728</xr:ValueId>
+      </xr:GeneratedType>
+    </InternalInfo>
+    <Properties>
+      <Name>пр_КаталогПроизводителя</Name>
+      <Synonym>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Каталог производителя</v8:content>
+        </v8:item>
+      </Synonym>
+      <Comment/>
+      <UseStandardCommands>true</UseStandardCommands>
+      <DefaultForm>DataProcessor.пр_КаталогПроизводителя.Form.Форма</DefaultForm>
+    </Properties>
+    <ChildObjects>
+      <Form>Форма</Form>
+    </ChildObjects>
+  </DataProcessor>
+</MetaDataObject>
