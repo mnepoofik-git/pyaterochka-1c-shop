@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+  <Catalog uuid="92b4d23b-ddb5-584f-96bd-094b6edb3a3e">
+    <InternalInfo>
+      <xr:GeneratedType name="CatalogObject.пр_Подключения" category="Object">
+        <xr:TypeId>f3a9448f-7db4-548d-a191-d177c583f8e1</xr:TypeId>
+        <xr:ValueId>9efa222a-f0fc-59e0-88b7-0cf680ec486e</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="CatalogRef.пр_Подключения" category="Ref">
+        <xr:TypeId>4d6fb99f-0284-5c3a-9fff-f6b738ec25a7</xr:TypeId>
+        <xr:ValueId>d1418ce2-84bf-5f44-91f0-8c0561014a74</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="CatalogSelection.пр_Подключения" category="Selection">
+        <xr:TypeId>dd0df9f3-349a-5dc5-bc2f-5a59ef3a2793</xr:TypeId>
+        <xr:ValueId>9f169ead-0fb6-5cb1-8c4b-6f7cd406df9a</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="CatalogList.пр_Подключения" category="List">
+        <xr:TypeId>145d2cdd-d52b-5d6d-9640-dea64bd4fbcb</xr:TypeId>
+        <xr:ValueId>a6a9057a-0d35-5ca3-b8b3-9761b60a86f6</xr:ValueId>
+      </xr:GeneratedType>
+      <xr:GeneratedType name="CatalogManager.пр_Подключения" category="Manager">
+        <xr:TypeId>80b88928-769b-5f9d-af90-68cd10032b05</xr:TypeId>
+        <xr:ValueId>36f0a888-c48f-5a2a-9c4c-36ffdce3bbfc</xr:ValueId>
+      </xr:GeneratedType>
+    </InternalInfo>
+    <Properties>
+      <Name>пр_Подключения</Name>
+      <Synonym>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Подключение к производителю</v8:content>
+        </v8:item>
+      </Synonym>
+      <Comment/>
+      <UseStandardCommands>false</UseStandardCommands>
+      <CodeLength>9</CodeLength>
+      <DescriptionLength>80</DescriptionLength>
+      <CodeType>String</CodeType>
+      <CheckUnique>true</CheckUnique>
+      <Autonumbering>true</Autonumbering>
+    </Properties>
+    <ChildObjects>
+      <Attribute uuid="9e9b1e99-1b94-5405-9745-7ac40c6af77d">
+        <Properties>
+          <Name>Адрес</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Адрес</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>300</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Attribute>
+      <Attribute uuid="3c8f7af1-3c32-52aa-b95d-784cde88c7f2">
+        <Properties>
+          <Name>Логин</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Логин</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>80</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Attribute>
+      <Attribute uuid="e61ff307-a77d-5b0e-be0f-d15fc3659b1d">
+        <Properties>
+          <Name>ВидЦеныUID</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ВидЦеныUID</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>36</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Attribute>
+      <Attribute uuid="32466750-682f-5cca-a284-173ac9935b9c">
+        <Properties>
+          <Name>СкладUID</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>СкладUID</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:string</v8:Type>
+            <v8:StringQualifiers>
+              <v8:Length>36</v8:Length>
+              <v8:AllowedLength>Variable</v8:AllowedLength>
+            </v8:StringQualifiers>
+          </Type>
+        </Properties>
+      </Attribute>
+      <Attribute uuid="c6c6b5b1-ca9c-5bb3-8a9b-451639d5ca4b">
+        <Properties>
+          <Name>ДатаОбновления</Name>
+          <Synonym>
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ДатаОбновления</v8:content>
+            </v8:item>
+          </Synonym>
+          <Comment/>
+          <Type>
+            <v8:Type>xs:dateTime</v8:Type>
+          </Type>
+        </Properties>
+      </Attribute>
+    </ChildObjects>
+  </Catalog>
+</MetaDataObject>
