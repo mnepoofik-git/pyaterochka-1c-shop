@@ -32,7 +32,7 @@ def entry(name, key):
 def catalog():
     names = {PARTNERS: ["ОфисПро Трейд"], STORES: ["Основной склад"],
              KINDS: ["Закупочная", "Розничная"], ORGS: ["ОфисПро Производство"],
-             STATES: ["Не подтвержден", "В производстве", "Подтвержден"]}
+             STATES: ["Не подтвержден", "Подтвержден", "В работе", "Выполнен", "Закрыт", "В производстве"]}
     data = {k: [entry(n, k + n) for n in ns] for k, ns in names.items()}
     goods, stock, prices = [], [], []
     folders = {}
@@ -130,3 +130,18 @@ def save(path, doc):
 def orders(path):
     with sqlite3.connect(path) as db:
         return [json.loads(row[0]) for row in db.execute("SELECT body FROM orders ORDER BY rowid")]
+
+
+def change_state(path, key, state):
+    known = {r["Description"]: r["Ref_Key"] for r in DATA[STATES]}
+    if not isinstance(state, str) or state not in known:
+        raise Problem("Выберите состояние из справочника производителя.")
+    with sqlite3.connect(path) as db:
+        db.execute("BEGIN IMMEDIATE")
+        found = db.execute("SELECT body FROM orders WHERE id=?", (key,)).fetchone()
+        if not found:
+            raise Problem("В учебной базе нет заказа с таким UID.", 404)
+        doc = json.loads(found[0])
+        doc["СостояниеЗаказа"] = known[state]
+        db.execute("UPDATE orders SET body=? WHERE id=?", (json.dumps(doc, ensure_ascii=False), key))
+    return doc

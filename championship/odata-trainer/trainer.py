@@ -11,11 +11,15 @@ import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qsl, quote, unquote, urlsplit
 
-from model import DATA, HERE, ORDER, Problem, init_db, order, orders, save
+from model import DATA, HERE, ORDER, Problem, change_state, init_db, order, orders, save
 from protocol import ACTIONS, SCHEMA, metadata, read
 
 ROOT = "/unf_production/odata/standard.odata/"
 ASSETS = {"": ("index.html", "text/html"), "app.js": ("app.js", "text/javascript"), "app.css": ("app.css", "text/css")}
+
+
+ASSETS.update({"practice": ("practice.html", "text/html"), "practice.js": ("practice.js", "text/javascript"),
+               "practice.css": ("practice.css", "text/css"), "modules.json": ("modules.json", "application/json")})
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -49,11 +53,25 @@ class Handler(BaseHTTPRequestHandler):
         if self.command == "GET" and path[1:] in ASSETS:
             file, mime = ASSETS[path[1:]]
             return self.reply(200, (HERE / file).read_bytes(), mime)
-        if path != ROOT.rstrip("/") and not path.startswith(ROOT):
+        if self.command == "GET" and path == "/catalog-input.zip":
+            for candidate in (HERE / "catalog-input.zip", HERE.parent / "Учебный каталог ОфисПро — 500 товаров.zip"):
+                if candidate.is_file():
+                    return self.reply(200, candidate.read_bytes(), "application/zip",
+                                      {"Content-Disposition": 'attachment; filename="catalog-input.zip"'})
+            raise Problem("Откройте полный комплект OfficePro-Practice.zip и распакуйте его целиком.", 404)
+        manage = re.fullmatch(r"/practice/orders/([0-9a-fA-F-]{36})/state", path)
+        if not manage and path != ROOT.rstrip("/") and not path.startswith(ROOT):
             raise Problem("Проверьте путь к публикации.", 404)
         token = self.headers.get("Authorization", "").encode("utf-8")
         if not hmac.compare_digest(token, self.server.auth):
             raise Problem("Требуется верный логин и пароль учебного пользователя.", 401)
+        if manage:
+            if self.command != "POST":
+                raise Problem("Для смены состояния используется POST.", 405)
+            body = self.json_body()
+            if not isinstance(body, dict):
+                raise Problem("Укажите состояние заказа.")
+            return self.reply(200, change_state(self.server.db, manage[1].lower(), body.get("state")))
         resource = path[len(ROOT):].rstrip("/")
         if self.command == "POST":
             return self.create_order(resource)
@@ -72,17 +90,19 @@ class Handler(BaseHTTPRequestHandler):
         result = read(name, rows, params, ROOT + quote(resource), key.lower() if key else None)
         self.reply(200, result)
 
-    def create_order(self, resource):
-        if resource != ORDER:
-            raise Problem("POST доступен для заказов покупателя.", 405)
+    def json_body(self):
         length = self.headers.get("Content-Length", "")
         if not length.isdecimal() or int(length) > 256000:
             raise Problem("Укажите размер JSON до 256 КБ.", 413)
         try:
-            body = json.loads(self.rfile.read(int(length)).decode("utf-8"))
+            return json.loads(self.rfile.read(int(length)).decode("utf-8"))
         except (ValueError, UnicodeError):
             raise Problem("Тело запроса должно содержать JSON в UTF-8.")
-        doc = order(body)
+
+    def create_order(self, resource):
+        if resource != ORDER:
+            raise Problem("POST доступен для заказов покупателя.", 405)
+        doc = order(self.json_body())
         save(self.server.db, doc)
         link = ROOT + quote(f"{ORDER}(guid'{doc['Ref_Key']}')")
         self.reply(201, doc, extra={"Location": link})
@@ -104,7 +124,7 @@ def main():
         init_db(args.db)
         http.db = args.db
         http.auth = b"Basic " + base64.b64encode(("odata_user:" + password).encode())
-        print(f"Откройте http://127.0.0.1:{http.server_port}/  •  Остановка: Ctrl+C", flush=True)
+        print(f"Откройте http://127.0.0.1:{http.server_port}/practice  •  Остановка: Ctrl+C", flush=True)
         try:
             http.serve_forever()
         except KeyboardInterrupt:

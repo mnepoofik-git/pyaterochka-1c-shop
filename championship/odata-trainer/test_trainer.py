@@ -13,6 +13,7 @@ import uuid
 from xml.etree import ElementTree as ET
 
 from model import BUYER, GOODS, ORDER, PRICE, STOCK, init_db
+from verify_publication import Endpoint, check_catalog, check_group, check_metadata, check_order, check_register
 from trainer import Handler, ROOT, ThreadingHTTPServer
 
 
@@ -74,6 +75,14 @@ class HTTPChecks(unittest.TestCase):
         for params in [{"$select":"Ошибка"}, {"$filter":"Опечатка eq false"}, {"$skip":"-1"}]:
             self.assertEqual(self.fetch(GOODS, params)[0], 400)
 
+    def test_publication_verifier(self):
+        api = Endpoint(self.root, "odata_user", "local-test")
+        check_metadata(api)
+        self.assertIn("500 товаров", check_catalog(api))
+        self.assertIn("60 строк", check_group(api))
+        self.assertIn("486150", check_register(api, STOCK+"/Balance", "КоличествоBalance"))
+        self.assertIn("1000 строк", check_register(api, PRICE+"/SliceLast", "Цена"))
+
     def test_queries(self):
         rows, count = self.pages(GOODS, {"$filter":"IsFolder eq false", "$orderby":"Description asc",
                                          "$select":"Ref_Key,Description,Артикул"})
@@ -100,6 +109,16 @@ class HTTPChecks(unittest.TestCase):
         self.assertEqual((status, doc["СуммаДокумента"], doc["Контрагент"]["Description"]), (200,436,"ОфисПро Трейд"))
         self.assertEqual(doc["Date"], body["Date"])
         self.assertEqual(len(doc["Запасы"]), 2)
+        api = Endpoint(self.root, "odata_user", "local-test")
+        check_order(api, body["Ref_Key"], True)
+        state_url = "/practice/orders/" + body["Ref_Key"] + "/state"
+        self.assertEqual(self.fetch(state_url, body={"state":"Закрыт"}, auth=False, absolute=True)[0], 401)
+        self.assertEqual(self.fetch(state_url, body={"state":"Ошибка"}, absolute=True)[0], 400)
+        status, changed = self.fetch(state_url, body={"state":"В работе"}, absolute=True)
+        self.assertEqual(status, 200)
+        status, saved = self.fetch(ORDER + "(guid'" + body["Ref_Key"] + "')")
+        self.assertEqual(saved["СостояниеЗаказа"], changed["СостояниеЗаказа"])
+        self.assertNotEqual(saved["СостояниеЗаказа"], doc["СостояниеЗаказа"])
         body["Запасы"][1]["Количество"] = -3
         self.assertEqual(self.fetch(ORDER, body=body)[0], 400)
         self.assertEqual(len(self.pages(ORDER)[0]), 1)
