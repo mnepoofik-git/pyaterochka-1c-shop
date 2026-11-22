@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ОфисПро · Тренажёр OData</title><link rel="stylesheet" href="/app.css">
+<header><div class="wrap"><span class="brand">ОфисПро</span><span>Производство / Учебная среда</span></div></header>
+<main class="wrap"><h1>Тренажёр OData</h1>
+<section class="connection"><form id="connect"><label class="wide">Адрес публикации<input id="base" type="url" required></label><label>Логин<input id="login" value="odata_user" autocomplete="username"></label><label>Пароль<input id="password" type="password" autocomplete="off"></label><button>Проверить подключение</button></form><p id="status" role="status">Введите пароль, заданный при запуске сервиса.</p></section>
+<nav aria-label="Разделы тренажёра" id="tabs"></nav>
+<section id="workspace"><h2 id="title"></h2>
+<div id="browse"><form id="query">
+<label id="resourceLabel" class="wide">Ресурс<input id="resource" list="resources"><datalist id="resources"></datalist></label>
+<label class="wide">Отбор · $filter<input id="filter" placeholder="IsFolder eq false"></label>
+<div id="options" class="wide fields"><label>Поля · $select<input id="select" placeholder="Ref_Key,Description,Артикул"></label><label>Связь · $expand<input id="expand" placeholder="Контрагент"></label><label>Сортировка · $orderby<input id="orderby" placeholder="Description asc"></label></div>
+<button id="get">Получить</button></form></div>
+<div id="create" hidden><form id="orderForm"><label class="wide">UID контрагента «ОфисПро Трейд»<input id="buyer" required></label><label>Дата заказа<input id="date" type="datetime-local" step="1" required></label><div class="wide" id="lines"></div><button class="alt" type="button" id="add">Добавить строку</button><button>Создать заказ</button></form>
+<p id="receipt"></p><button type="button" class="alt" id="reread" hidden>Прочитать заказ по UID</button></div>
+<div id="check" hidden><p>Выполните запросы на соседних вкладках или в своей обработке 1С. Введите результаты и UID заказа.</p>
+<ol><li>Получите все товары без папок. Посчитайте строки.</li><li>Прочитайте остатки. Сложите количество по всем страницам.</li><li>Посчитайте записи цен по обоим видам.</li><li>Найдите UID папки «Блокноты». Посчитайте товары с этим Parent_Key.</li><li>Создайте заказ для «ОфисПро Трейд» на 15 января 2027 года. Добавьте 2 шт. УЧ-0001 и 3 шт. УЧ-0002 по закупочным ценам. Прочитайте заказ с раскрытием контрагента.</li></ol>
+<form id="answers"><label>Товаров<input name="goods" required type="number"></label><label>Остаток, шт.<input name="stock" required type="number"></label><label>Записей цен<input name="prices" required type="number"></label><label>Товаров в «Блокнотах»<input name="group" required type="number"></label><label class="wide">UID созданного заказа<input name="uid" required></label><button>Сверить результаты</button></form><ul id="verdict" aria-live="polite"></ul>
+<details><summary>Открыть контрольные значения</summary><p>500 товаров, 500 строк остатков, 486 150 шт., 1 000 цен и 60 товаров в «Блокнотах». В заказе две строки на 436 ₽. Закупочные цены — 83 и 90 ₽.</p></details></div>
+<p id="message" role="status"></p><div id="grid"></div>
+</section></main><script src="/app.js" defer></script></html>
