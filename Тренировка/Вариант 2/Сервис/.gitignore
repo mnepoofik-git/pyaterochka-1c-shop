@@ -1,0 +1,4 @@
+__pycache__/
+catalog.csv
+*.sqlite3
+*.sqlite3-*
